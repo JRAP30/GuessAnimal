@@ -1,0 +1,156 @@
+
+.body {
+    font-family: "Gochi Hand", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.page {
+    border: 4px solid #ffda62;
+    font-family: "Gochi Hand", cursive;
+    background-color: #91bbb0;
+}
+
+#first-header {
+    font-size: 80px;
+    color: #ffda62;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.game-page {
+    border: 4px solid #91bbb0;
+}
+
+.top-container {
+    text-align: center;
+}
+
+.word {
+    font-size: 80px;
+    margin-top: 10px;
+    color: #003350;
+}
+
+.middle-container {
+    display: flex;
+    background-color: #ffda62;
+    justify-content: center;
+    align-items: center;
+}
+
+.picture {
+    border: 40px solid #ffda62;
+}
+
+#image {
+    filter: blur(30px);
+}
+
+#image,
+#image-final {
+    border-radius: 10%;
+}
+
+.information-container {
+    text-align: center;
+    width: 330px;
+}
+
+.input {
+    display: flex;
+    justify-content: center;
+}
+
+p,
+#header,
+#letters-guessed {
+    text-align: center;
+    font-size: 25px;
+    color: #003350;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#letter {
+    width: 70px;
+    height: 70px;
+    font-size: 50px;
+    font-family: "Gochi Hand";
+    text-align: center;
+    border: 4px solid #ea9999;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    background-color: #FAEAEA;
+}
+
+#message,
+#messagex {
+    color: #ffda62;
+    text-align: center;
+    font-size: 25px;
+    width: 70px;
+    height: 70px;
+    border: 4px solid #ffda62;
+    border-radius: 12px;
+}
+
+.button {
+    min-width: 50px;
+    height: 50px;
+    font-size: 20px;
+    font-family: "Gochi Hand", cursive;
+    text-align: center;
+    border: 4px solid #ea9999;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    color: #003350;
+    background-color: #f2c1c1;
+}
+
+.button:hover {
+    background-color: #ea9999;
+    cursor: pointer;
+}
+
+#next-button,
+#again-button {
+    min-width: 70px;
+    height: 70px;
+    font-size: 30px;
+}
+
+.guessed {
+    text-align: center;
+}
+
+.playAgain {
+    display: flex;
+    justify-content: center;
+}
+
+#congrats-final {
+    color: #ea9999;
+    font-size: 50px;
+    text-align: center;
+    text-shadow: 2px 2px 5px #003350;
+}
+
+.final-page {
+    border: 4px solid #91bbb0;
+}
+
+#word-final {
+    text-shadow: 2px 2px 5px #003350;
+}
+
+.next-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.hidden {
+    display: none
+}

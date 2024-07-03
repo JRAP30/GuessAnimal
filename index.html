@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap" rel="stylesheet">
+    <title>Guess the Animal Game </title>
+</head>
+
+<body>
+    <div class="page">
+        <h1 id="first-header">Guess the Animal Game</h1>
+        <div class="game-page" id="game-page">
+            <div class="top-container">
+                <div class="word" id="word"></div>
+            </div>
+            <div class="middle-container">
+                <div class="picture">
+                    <img id="image"> </img>
+                </div>
+                <div class="information-container">
+                    <p> Type a letter in the box below </p>
+                    <div class="input">
+                        <div id="messagex">Try again!</div>
+                        <input type="text" id="letter" placeholder="?" maxlength=1 minlength=1
+                            onkeyup="input()"></input>
+                        <div id="message">Try again!</div>
+                    </div>
+                    <div class="hint">
+                        <p> press hint for help </p>
+                        <button class="button" id="hint-button" onclick="hint(almostWord,finalWord)"> Hint </button>
+                    </div>
+                    <div class="guessed">
+                        <span id="header"> Letters Guessed: </span>
+                        <span id="letters-guessed"> </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="final-page hidden" id="final-page">
+            <div class="top-container">
+                <div class="word" id="word-final"></div>
+            </div>
+            <div class="middle-container">
+                <div class="picture">
+                    <img id="image-final"></img>
+                </div>
+                <div class="next">
+                    <button class="button" id="next-button">
+                        Next →
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="congrats-page hidden" id="congrats-page">
+            <div class="congrats">
+                <h2 id="congrats-final"> Congratulations! You finished the game! 🎉</h2>
+            </div>
+            <div class="playAgain">
+                <button class="button" id="again-button">
+                    Play Again?
+                </button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
